@@ -1,0 +1,13 @@
+@import "breakpoints/base.scss";
+
+@media (min-width: 768px) {
+    @import "breakpoints/768.scss";
+}
+
+@media (min-width: 1030px) {
+    @import "breakpoints/1030.scss";
+}
+
+@media (min-width: 1240px) {
+    @import "breakpoints/1240.scss";
+}
