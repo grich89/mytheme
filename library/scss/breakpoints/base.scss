@@ -5,6 +5,7 @@ $red: #775656;
 $cinereous: #998882;
 $ltgray: #d2d7df;
 $green: #879e92;
+$yellow: #FBFB1E;
 
 body {
     margin: 0;
@@ -14,7 +15,7 @@ body {
     position: relative;
     color: #fff;
     .site-branding {
-        padding: 1em;
+        padding: 3em 1em;
         background: $dkgray;
         display: flex;
         justify-content: center;
@@ -80,9 +81,9 @@ body {
       a {
         transition: .4s all;
         text-decoration: none;
-        color: $cinereous;
+        color: #fff;
         &:hover {
-            color: $green;
+            color: $yellow;
             //text-shadow: 0px 0px 1px yellow;
         }
       }
@@ -131,6 +132,83 @@ body {
             &:after {
                 transform: translateY(8px);
             }
+        }
+    }
+}
+
+#about {
+    padding: 2em;
+    overflow: auto;
+    background: $green;
+    .inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 110%;
+        h2 {
+            margin: 0 0 .5em 0;
+            color: #CAFBE2;
+            font-size: 2em;
+        }
+        h3 {
+            margin-top: 0;
+            margin-bottom: .3em;
+            .upper {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: .83em;
+            }
+        }
+        h4 {
+            color: $yellow;
+            margin: 0;
+            font-size: 1.083em;
+        }
+        p {
+            color: #fff;
+        }
+    }
+}
+
+#css {
+    background: $cinereous;
+    padding: 3em 2em 3.5em 2em;
+    .inner {
+        //overflow: hidden;
+        margin: 0 auto;
+        max-width: 280px;
+        position: relative;
+        line-height: 110%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        h2 {
+            margin: 0;
+            color: $red;
+            font-size: 2em;
+        }
+        h3 {
+            line-height: 150%;
+            margin: 0;
+        }
+        h4 {    
+            margin: 0;
+            color: $red;
+            font-style: italic;
+            line-height: 0;
+            position: absolute;
+            right: 61.4%;
+            bottom: -13%;
+            //text-shadow: 2px 2px black;
+        }
+        h5 {
+            line-height: 72%;
+            color: #fff;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 5em;
         }
     }
 }

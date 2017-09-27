@@ -3,3 +3,22 @@
 #masthead .site-branding {
   font-size: 4em;
 }
+
+/* line 9, ../../scss/breakpoints/1030.scss */
+#about {
+  padding: 10em;
+}
+/* line 11, ../../scss/breakpoints/1030.scss */
+#about .inner {
+  font-size: 2.5em;
+}
+
+/* line 16, ../../scss/breakpoints/1030.scss */
+#css {
+  padding: 12em 2em 14.3em 2em;
+}
+/* line 18, ../../scss/breakpoints/1030.scss */
+#css .inner {
+  font-size: 3em;
+  max-width: 840px;
+}
