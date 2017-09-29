@@ -1,0 +1,139 @@
+@mixin transition($transition...) {
+    // defining prefixes so we can use them in mixins below
+    $prefixes:      ("-webkit-", "" );
+    @each $prefix in $prefixes {
+      #{$prefix}transition: $transition;
+    }
+  }
+  
+  /*********************
+  CSS3 GRADIENTS
+  Be careful with these since they can
+  really slow down your CSS. Don't overdo it.
+  *********************/
+  
+  /* @include css-gradient(#dfdfdf,#f8f8f8); */
+  @mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+      background-color: $to;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+      background-image: -webkit-linear-gradient(top, $from, $to);
+      background-image: -moz-linear-gradient(top, $from, $to);
+      background-image: -o-linear-gradient(top, $from, $to);
+      background-image: linear-gradient(to bottom, $from, $to);
+  }
+  
+  /*********************
+  BOX SIZING
+  *********************/
+  
+  /* @include box-sizing(border-box); */
+  /* NOTE: value of "padding-box" is only supported in Gecko. So
+  probably best not to use it. I mean, were you going to anyway? */
+  @mixin box-sizing($type: border-box) {
+      -webkit-box-sizing: $type;
+      -moz-box-sizing:    $type;
+      -ms-box-sizing:     $type;
+      box-sizing:         $type;
+  }
+  
+  @mixin flex {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+  }
+  
+  @mixin grid($flex) {
+      @if $flex {
+          @include flex;
+      } @else {
+          display: block;
+      }
+  }
+  
+  @mixin flexCenter {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  @mixin alignCenter {
+      align-items: center;
+  }
+  
+  @mixin flexCol {
+      flex-direction: column;
+  }
+  
+  @mixin flexRow {
+      flex-direction: row;
+  }
+  
+  @mixin flexWrap {
+      flex-wrap: wrap;
+  }
+  
+  @mixin headingTextShadow {
+      text-shadow: 0px 5px 10px #000;
+  }
+  
+  @mixin centerBg {
+      background-size: cover;
+      background-position: center center;
+  }
+  
+  @mixin flexAlign($position) {
+      -webkit-align-items: $position;
+      -ms-flex-align: $position;
+      align-items: $position;
+  }
+  
+  @mixin alignSelf($position) {
+      align-self: $position;
+  }
+  
+  @mixin flexSize($size) {
+      -webkit-flex: $size;
+      -ms-flex: $size;
+      flex: $size;
+  }
+  
+  @mixin flexOrder($order) {
+      -webkit-order: $order;
+      -ms-flex-order: $order;
+      order: $order;
+  }
+  
+  @mixin alignContent($position) {
+      -webkit-align-content: $position;
+      -ms-flex-line-pack: $position;
+      align-content: $position;
+  }
+  
+  @mixin justifyContent($position) {
+      -webkit-justify-content: $position;
+      -ms-flex-pack: $position;
+      justify-content: $position;
+  }
+  
+  @mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+  }
+  
+  @mixin bottomBoxShadow {
+      -moz-box-shadow: inset 0 -200px 200px -130px #000000;
+      -webkit-box-shadow: inset 0 -200px 200px -130px #000000;
+      box-shadow: inset 0 -200px 200px -130px #000000;
+  }
+
+  %clearfix {
+    *zoom: 1;
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }

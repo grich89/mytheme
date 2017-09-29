@@ -237,3 +237,200 @@ body {
   right: 0;
   font-size: 5em;
 }
+
+/* line 216, ../../scss/breakpoints/base.scss */
+#tech {
+  background: #d2d7df;
+}
+/* line 218, ../../scss/breakpoints/base.scss */
+#tech .inner {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1200px;
+}
+/* line 224, ../../scss/breakpoints/base.scss */
+#tech .inner h2 {
+  margin: 0;
+  line-height: 100%;
+  color: #556a5f;
+}
+/* line 229, ../../scss/breakpoints/base.scss */
+#tech .inner h3 {
+  margin: 0;
+  line-height: 120%;
+  color: #879e92;
+  font-size: 1.05em;
+}
+/* line 235, ../../scss/breakpoints/base.scss */
+#tech .inner ul {
+  margin: 2em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 239, ../../scss/breakpoints/base.scss */
+#tech .inner ul li {
+  clear: both;
+  text-align: left;
+  margin: .75em 0;
+  color: #fff;
+  font-size: .9em;
+}
+/* line 246, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar {
+  position: relative;
+  background: #879e92;
+  width: 100%;
+  border-radius: 3px;
+}
+/* line 252, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .six-of-12 {
+  padding: .5em .75em;
+  width: 50%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 260, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .seven-of-12 {
+  padding: .5em .75em;
+  width: 58.3%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 268, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .eight-of-12 {
+  padding: .5em .75em;
+  width: 66.67%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 276, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .nine-of-12 {
+  padding: .5em .75em;
+  width: 75%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 284, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .ten-of-12 {
+  padding: .5em .75em;
+  width: 83.33%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 292, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .eleven-of-12 {
+  padding: .5em .75em;
+  width: 91.67%;
+  background: #556a5f;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 300, ../../scss/breakpoints/base.scss */
+#tech .inner ul li .bar .twelve-of-12 {
+  padding: .5em .75em;
+  width: 100%;
+  background: #556a5f;
+  border-radius: 3px;
+}
+
+/* line 313, ../../scss/breakpoints/base.scss */
+#made {
+  padding: 2em;
+  background: #3E4447;
+}
+/* line 316, ../../scss/breakpoints/base.scss */
+#made .head {
+  text-align: center;
+}
+/* line 319, ../../scss/breakpoints/base.scss */
+#made .head h2 {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+}
+/* line 324, ../../scss/breakpoints/base.scss */
+#made .head h3 {
+  padding-left: .5em;
+  color: #FBFB1E;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0;
+}
+/* line 334, ../../scss/breakpoints/base.scss */
+#made .cols .col {
+  transition: .4s all;
+  margin: 2em auto;
+  background: #879e92;
+  padding: 1em 1em 0 1em;
+  border-radius: 3px;
+  max-width: 350px;
+  width: 100%;
+}
+/* line 342, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+/* line 348, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost .overlay {
+  transition: .4s all;
+  height: 300px;
+}
+/* line 352, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost .overlay .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #879e92;
+  color: #fff;
+  padding: .75em 0;
+  transition: .4s all;
+}
+/* line 361, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost .overlay .text h3 {
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 100%;
+}
+/* line 367, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost .overlay .text .excerpt {
+  font-size: .9em;
+}
+/* line 370, ../../scss/breakpoints/base.scss */
+#made .cols .col .homepost .overlay .text:after {
+  position: absolute;
+  bottom: 5px;
+  right: -100px;
+  font-size: 2.4em;
+  color: #3E4447;
+  font-family: 'FontAwesome';
+  content: "\f105";
+  transition: .2s all;
+}
+/* line 383, ../../scss/breakpoints/base.scss */
+#made .cols .col:hover {
+  background: #6c8678;
+}
+/* line 386, ../../scss/breakpoints/base.scss */
+#made .cols .col:hover .homepost .overlay {
+  background: rgba(135, 158, 146, 0.4);
+}
+/* line 388, ../../scss/breakpoints/base.scss */
+#made .cols .col:hover .homepost .overlay .text {
+  background: #6c8678;
+}
+/* line 390, ../../scss/breakpoints/base.scss */
+#made .cols .col:hover .homepost .overlay .text:after {
+  right: 5px;
+  color: #a3b5ac;
+}

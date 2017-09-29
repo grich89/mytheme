@@ -24,3 +24,31 @@
         }
     }
 }
+
+#tech {
+    padding: 1em;
+    .inner {
+        font-size: 2em;
+        ul {
+            font-size: .75em;
+        }
+    }
+}
+
+#made {
+    padding: 4em 2em 2em 2em;
+    .head {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .cols {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        .col {
+            margin: 1em;
+            flex: 1 0 auto;
+        }        
+    }
+}

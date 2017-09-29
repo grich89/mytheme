@@ -27,3 +27,38 @@
 #css .inner h4 {
   right: 61.7%;
 }
+
+/* line 28, ../../scss/breakpoints/768.scss */
+#tech {
+  padding: 1em;
+}
+/* line 30, ../../scss/breakpoints/768.scss */
+#tech .inner {
+  font-size: 2em;
+}
+/* line 32, ../../scss/breakpoints/768.scss */
+#tech .inner ul {
+  font-size: .75em;
+}
+
+/* line 38, ../../scss/breakpoints/768.scss */
+#made {
+  padding: 4em 2em 2em 2em;
+}
+/* line 40, ../../scss/breakpoints/768.scss */
+#made .head {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 44, ../../scss/breakpoints/768.scss */
+#made .cols {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 49, ../../scss/breakpoints/768.scss */
+#made .cols .col {
+  margin: 1em;
+  flex: 1 0 auto;
+}

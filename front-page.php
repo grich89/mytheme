@@ -19,87 +19,103 @@ get_header(); ?>
 </div>
 
 <div id="tech">
-<h2>I'm familiar</h2>
-<h3>Or good</h3>
-<h4>Or maybe even great with:</h4>
+<div class="inner">
+<h2>I'm proficient,</h2>
+<h3>good, or great with:</h3>
 <ul>
 <li>
 <div class="bar">
-<div class="12of12">
+<div class="twelve-of-12">
 HTML & CSS
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="6of12">
+<div class="six-of-12">
 JavaScript
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="8of12">
+<div class="eight-of-12">
 jQuery
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="10of12">
+<div class="ten-of-12">
 SASS
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="8of12">
+<div class="eight-of-12">
 Git
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="6of12">
+<div class="six-of-12">
 JS Task Runners
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="11of12">
+<div class="eleven-of-12">
 Wordpress
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="8of12">
+<div class="eight-of-12">
 Hubspot
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="7of12">
+<div class="seven-of-12">
 UX & UI
 </div>
 </div>
 </li>
 <li>
 <div class="bar">
-<div class="6of12">
+<div class="six-of-12">
 Adobe CC
 </div>
 </div>
 </li>
 </ul>
 </div>
+</div>
 
-<div class="made">
-<h2>
-I worked on:</h2>
-</h2>
+<div id="made">
+    <div class="head">
+        <h2>Recent Projects</h2>
+        <h3>(Hire me?)</h3>
+    </div>
+    <div class="cols">
+    <?php
+		$args = array( 'numberposts' => '9', 'post_status' => 'publish' );
+		$recent_posts = wp_get_recent_posts( $args );
+		foreach( $recent_posts as $recent ){
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id($recent['ID']), false, '' );
+			echo '<div class="col"><div class="homepost" style="background-image: url('. $src[0] .');"><div class="overlay"><div>';
+			//echo '<div class="content">' . $recent["post_content"] . '</div>';
+            echo '<div class="text"><h3>' . $recent["post_title"] .'</h3>';
+            echo '<div class="excerpt">' . $recent["post_excerpt"] . '</div>';
+			//echo '<span class="tiny">' . mysql2date('M j, Y', $recent["post_date"]) . '</span>';
+			echo '</div></div></div></div></div>';
+    } ?>
+    </div>
 </div>
 
 
